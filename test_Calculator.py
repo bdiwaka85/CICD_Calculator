@@ -4,7 +4,7 @@ Created on Apr 7, 2020
 @author: Diwakar
 '''
 import unittest
-from UnitTesting.calculator import Calculator
+import Calculator
 
 class test_Calculator(unittest.TestCase):
 #the below declaration is what binds the class Calculator to this program so that it can invoke the functions which are inside the class
