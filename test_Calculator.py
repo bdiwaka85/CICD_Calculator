@@ -32,6 +32,14 @@ class test_Calculator(unittest.TestCase):
         
         with self.assertRaises(ZeroDivisionError):
             calculator.divide(4,0)
+#
+    def test_Exponent(self):
+        self.assertEqual(calculator.exponent(10,2), 100)
+        self.assertEqual(calculator.exponent(10,1), 10)
+        self.assertEqual(calculator.exponent(10,0), 1)
+        self.assertEqual(calculator.exponent(1,0), 1)
+        self.assertRaises(TypeError, calculator.exponent, 'watch the values')
+
 
 if __name__ == "__main__":
     unittest.main()
